@@ -84,6 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 734549996425886020}
+  - component: {fileID: -9072138079263493533}
   m_Layer: 0
   m_Name: crystal
   m_TagString: Untagged
@@ -107,3 +108,17 @@ Transform:
   - {fileID: 2529128826266102010}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-9072138079263493533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3114568353522949372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a88207e551d2346b3117a8cff40087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntos: 4
+  tipo: AQ

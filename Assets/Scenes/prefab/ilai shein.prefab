@@ -84,6 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8116636348973462729}
+  - component: {fileID: -1660045693783710264}
   m_Layer: 0
   m_Name: ilai shein
   m_TagString: Untagged
@@ -107,3 +108,17 @@ Transform:
   - {fileID: 2429199138573285181}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1660045693783710264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8962109287510736972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a88207e551d2346b3117a8cff40087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntos: 15
+  tipo: AD

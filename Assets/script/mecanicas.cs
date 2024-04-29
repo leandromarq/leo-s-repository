@@ -225,46 +225,48 @@ public class NewBehaviourScript : MonoBehaviour
             tocajugar = true;
             next++;
    }
-
-
+        //--implementacion de las cartas climas jujuuuu
         int filaclima = 0;
-
-        public void clima (int n){
+        public void clima (int n)
+        {
             filaclima = n;
         }
-
-        void jugarclima(int n){
-
-            if(filaclima == 1){
-             for (int x=0 ;  x<ADplayer1int.Count; x++){
+        void jugarclima(int n)
+        {
+            if(filaclima == 1)
+            {
+             for (int x=0 ;  x<ADplayer1int.Count; x++)
+             {
                 ADplayer1int[x]+=n;
              }
-             for (int x=0 ;  x<ADplayer2int.Count; x++){
+             for (int x=0 ;  x<ADplayer2int.Count; x++)
+             {
                 ADplayer2int[x]+=n;
              }
-
             }            
-
-            if(filaclima == 2){
-                for(int x=0; x< CCplayer1int.Count; x++){
+            if(filaclima == 2)
+            {
+                for(int x=0; x< CCplayer1int.Count; x++)
+                {
                     CCplayer1int[x]+=n;
                 }
-                  for(int x=0; x< CCplayer2int.Count; x++){
+                  for(int x=0; x< CCplayer2int.Count; x++)
+                {
                     CCplayer2int[x]+=n;
                 }
             }
-
-            if(filaclima == 3){
-                for(int x=0; x< AQplayer1int.Count; x++){
+            if(filaclima == 3)
+            {
+                for(int x=0; x< AQplayer1int.Count; x++)
+                {
                     AQplayer1int[x]+=n;
                 }
-                  for(int x=0; x< AQplayer2int.Count; x++){
+                  for(int x=0; x< AQplayer2int.Count; x++)
+                {
                     AQplayer2int[x]+=n;
                 }
             }
         }
-
-
    public void btononesnext()
    {
      next++;

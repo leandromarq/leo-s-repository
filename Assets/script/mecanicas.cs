@@ -131,6 +131,10 @@ public class NewBehaviourScript : MonoBehaviour
        AQplayer1aux.Add(Manoplayer1aux[n-1]);
        Manoplayer1aux.RemoveAt(n-1);
        }
+       if(script.tipo == "cl"){
+         Manoplayer1aux.RemoveAt(n-1);
+        jugarclima(script.puntos);
+       }
         tocajugar = false;
     }
     else
@@ -153,6 +157,10 @@ public class NewBehaviourScript : MonoBehaviour
        AQplayer2int.Add(script.puntos);
        AQplayer2aux.Add(Manoplayer2aux[n-1]);
        Manoplayer2aux.RemoveAt(n-1);
+       }
+        if(script.tipo == "cl"){
+         Manoplayer2aux.RemoveAt(n-1);
+        jugarclima(script.puntos);
        }
          tocajugar = true;
     }
@@ -217,6 +225,46 @@ public class NewBehaviourScript : MonoBehaviour
             tocajugar = true;
             next++;
    }
+
+
+        int filaclima = 0;
+
+        public void clima (int n){
+            filaclima = n;
+        }
+
+        void jugarclima(int n){
+
+            if(filaclima == 1){
+             for (int x=0 ;  x<ADplayer1int.Count; x++){
+                ADplayer1int[x]+=n;
+             }
+             for (int x=0 ;  x<ADplayer2int.Count; x++){
+                ADplayer2int[x]+=n;
+             }
+
+            }            
+
+            if(filaclima == 2){
+                for(int x=0; x< CCplayer1int.Count; x++){
+                    CCplayer1int[x]+=n;
+                }
+                  for(int x=0; x< CCplayer2int.Count; x++){
+                    CCplayer2int[x]+=n;
+                }
+            }
+
+            if(filaclima == 3){
+                for(int x=0; x< AQplayer1int.Count; x++){
+                    AQplayer1int[x]+=n;
+                }
+                  for(int x=0; x< AQplayer2int.Count; x++){
+                    AQplayer2int[x]+=n;
+                }
+            }
+        }
+
+
    public void btononesnext()
    {
      next++;

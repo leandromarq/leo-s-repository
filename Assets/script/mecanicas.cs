@@ -479,13 +479,10 @@ public class NewBehaviourScript : MonoBehaviour, IPointerEnterHandler, IPointerE
         
         descripcion.sprite = cardImage.sprite;
         descripcion.enabled = true;
-        Debug.Log("Se mostro la carta");
-
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("Se oculto la carta");
         descripcion.enabled = false;
     }
      private void Update() 

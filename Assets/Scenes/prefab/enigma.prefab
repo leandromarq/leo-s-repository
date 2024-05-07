@@ -85,6 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8691061167497513477}
   - component: {fileID: 2666683111888471882}
+  - component: {fileID: 5249493748246927101}
   m_Layer: 0
   m_Name: enigma
   m_TagString: Untagged
@@ -122,3 +123,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntos: 3
   tipo: AQ
+--- !u!114 &5249493748246927101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2267232759577390647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []

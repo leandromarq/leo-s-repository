@@ -85,6 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 182030400106999588}
   - component: {fileID: -9217068520036287439}
+  - component: {fileID: -2607056857642196935}
   m_Layer: 0
   m_Name: sucks
   m_TagString: Untagged
@@ -122,3 +123,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntos: 5
   tipo: CLIMA
+--- !u!114 &-2607056857642196935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8568040676157365155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []

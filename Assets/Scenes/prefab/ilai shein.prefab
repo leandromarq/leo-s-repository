@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8116636348973462729}
   - component: {fileID: -1660045693783710264}
+  - component: {fileID: 8982399580928545762}
   m_Layer: 0
   m_Name: ilai shein
   m_TagString: Untagged
@@ -167,3 +168,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntos: 15
   tipo: AD
+--- !u!114 &8982399580928545762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8962109287510736972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []

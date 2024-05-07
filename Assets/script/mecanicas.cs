@@ -8,7 +8,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Globalization;
-public class NewBehaviourScript : MonoBehaviour
+using UnityEngine.EventSystems;
+public class NewBehaviourScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public List<GameObject>Maso=new List<GameObject>();
      List<GameObject>Maso1=new List<GameObject>();
@@ -40,6 +41,7 @@ public class NewBehaviourScript : MonoBehaviour
     public Image ocultar2;
     public Button lider1, lider2;
     public TMP_Text ronda1,ronda2;
+    public Image descripcion;
     //--como primer momento del proyecto mezclamos las cartas y robamos las cartas de cada mano
    private void Start() 
   {
@@ -468,6 +470,23 @@ public class NewBehaviourScript : MonoBehaviour
            // Debug.Log("3");
              SceneManager.LoadScene(2);
         }
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        GameObject currentCard = eventData.pointerEnter; // Obtener la carta sobre la que se colocó el puntero
+        Image cardImage = currentCard.GetComponentInChildren<Image>(); // Obtener la imagen de la carta
+        
+        descripcion.sprite = cardImage.sprite;
+        descripcion.enabled = true;
+        Debug.Log("Se mostro la carta");
+
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        Debug.Log("Se oculto la carta");
+        descripcion.enabled = false;
     }
      private void Update() 
     {

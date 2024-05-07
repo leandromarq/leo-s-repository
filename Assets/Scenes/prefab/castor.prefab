@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6240405388310421223}
   - component: {fileID: -6496925975142040372}
+  - component: {fileID: -8865020114078542607}
   m_Layer: 0
   m_Name: castor
   m_TagString: Untagged
@@ -47,6 +48,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntos: 5
   tipo: AQ
+--- !u!114 &-8865020114078542607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2362205352074310080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &6480124127671293955
 GameObject:
   m_ObjectHideFlags: 0

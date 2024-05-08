@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Globalization;
 using UnityEngine.EventSystems;
-public class NewBehaviourScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class NewBehaviourScript : MonoBehaviour
 {
     public List<GameObject>Maso=new List<GameObject>();
      List<GameObject>Maso1=new List<GameObject>();
@@ -42,6 +42,7 @@ public class NewBehaviourScript : MonoBehaviour, IPointerEnterHandler, IPointerE
     public Button lider1, lider2;
     public TMP_Text ronda1,ronda2;
     public Image descripcion;
+    public TMP_Text tipos;
     //--como primer momento del proyecto mezclamos las cartas y robamos las cartas de cada mano
    private void Start() 
   {
@@ -71,6 +72,36 @@ public class NewBehaviourScript : MonoBehaviour, IPointerEnterHandler, IPointerE
         Maso2.RemoveAt(n);
         }
     }
+
+    public void describir(int n){
+
+        Image aux;
+        juego script;
+
+        if(tocajugar)
+        {
+            aux = Manoplayer1aux[n-1].GetComponentInChildren<Image>();
+            script = Manoplayer1aux[n-1].GetComponent<juego>();
+        }
+
+        else
+         {
+             aux = Manoplayer2aux[n-1].GetComponentInChildren<Image>();
+             script = Manoplayer2aux[n-1].GetComponent<juego>();
+        }
+
+        descripcion.GetComponent<Image>().enabled = true;
+        descripcion.sprite = aux.sprite;
+        tipos.text += script.tipo;
+
+    }
+
+    public void nulldescripcion(){
+        descripcion.GetComponent<Image>().enabled = false;
+        tipos.text = "";
+    }
+
+     
 // si b1 es true le toca robar a player1 y si b2 es true le toca robar a player2 (robaran n cartas) 
 //--aunque pueden robar ambos como cuando termina la ronda, se transfieren las imagenes y los puntos del mazo a la mano
  void robarcartas (int n, bool b1, bool b2)
@@ -472,19 +503,6 @@ public class NewBehaviourScript : MonoBehaviour, IPointerEnterHandler, IPointerE
         }
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        GameObject currentCard = eventData.pointerEnter; // Obtener la carta sobre la que se colocó el puntero
-        Image cardImage = currentCard.GetComponentInChildren<Image>(); // Obtener la imagen de la carta
-        
-        descripcion.sprite = cardImage.sprite;
-        descripcion.enabled = true;
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        descripcion.enabled = false;
-    }
      private void Update() 
     {
      actualizacion();

@@ -270,33 +270,33 @@ public class NewBehaviourScript : MonoBehaviour
             {
              for (int x=0 ;  x<ADplayer1int.Count; x++)
              {
-                ADplayer1int[x]+=n;
+                ADplayer1int[x]+=-1;;
              }
              for (int x=0 ;  x<ADplayer2int.Count; x++)
              {
-                ADplayer2int[x]+=n;
+                ADplayer2int[x]+=-1;
              }
             }            
             if(filaclima == 2)
             {
                 for(int x=0; x< CCplayer1int.Count; x++)
                 {
-                    CCplayer1int[x]+=n;
+                    CCplayer1int[x]+=2;
                 }
                   for(int x=0; x< CCplayer2int.Count; x++)
                 {
-                    CCplayer2int[x]+=n;
+                    CCplayer2int[x]+=2;
                 }
             }
             if(filaclima == 3)
             {
                 for(int x=0; x< AQplayer1int.Count; x++)
                 {
-                    AQplayer1int[x]+=n;
+                    AQplayer1int[x]+=-3;
                 }
                   for(int x=0; x< AQplayer2int.Count; x++)
                 {
-                    AQplayer2int[x]+=n;
+                    AQplayer2int[x]+=-3;
                 }
             }
         }

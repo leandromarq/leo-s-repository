@@ -277,13 +277,16 @@ public class NewBehaviourScript : MonoBehaviour
                 ADplayer2int[x]+=-1;
              }
             }            
-            if(filaclima == 2)
+            if(filaclima == 2 && tocajugar==true)
             {
                 for(int x=0; x< CCplayer1int.Count; x++)
                 {
                     CCplayer1int[x]+=2;
                 }
-                  for(int x=0; x< CCplayer2int.Count; x++)
+            }
+            else if(filaclima==2 && tocajugar==false)
+            {
+                 for(int x=0; x< CCplayer2int.Count; x++)
                 {
                     CCplayer2int[x]+=2;
                 }
